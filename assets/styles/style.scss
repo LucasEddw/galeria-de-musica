@@ -1,0 +1,95 @@
+:root {
+    --unit: 300px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #eeeeee;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(10, 150px);
+    gap: 10px;
+    padding: 10px;
+    grid-template-areas:
+    "FukashigiNoCarte FukashigiNoCarte NarutoEnd1 NarutoEnd1 OshiNoKo YoungGirlA JustMonika JustMonika"
+    "FukashigiNoCarte FukashigiNoCarte BlendS ChavesAcapulco OshiNoKo DokiDokiForever YourReality YourReality"
+    "SystemOfDown RockefellerStreet RockefellerStreet AlienBlues CrimesLost DokiDokiForever YourReality YourReality"
+    "EstrelarRemix SequestroAs11 SequestroAs11 VocaloidGigachad VocaloidGigachad WeLiveWeLoveWeLie WeLiveWeLoveWeLie EmotionalPrism"
+    "EstrelarRemix SequestroAs11 SequestroAs11 VocaloidGigachad VocaloidGigachad WeLiveWeLoveWeLie WeLiveWeLoveWeLie EmotionalPrism"
+    "IGotNoTime AmorHospitalar AmorHospitalar VocaloidGigachad VocaloidGigachad Aishite StayWithMe StayWithMe"
+    "TheGirlNextDoor TheGirlNextDoor ShakeThatAss null null null null null"
+    "TheGirlNextDoor TheGirlNextDoor ShakeThatAss null null null null null"
+
+
+
+    "end end end end end end end end"
+    "end end end end end end end end"
+    ;
+    div {
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover{
+            transition: 0.3s;
+            scale: 1.05;
+            opacity: 0.9;
+        }
+    }
+    .end{
+        display: grid;
+        place-items: center;
+        font-size: 2rem;
+        h2{
+            transform: translateY(-100px);
+            font-size: 2.5rem;
+        }
+    }
+    #audio{
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border-radius: 100px;
+        position: fixed;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+}
+
+
+body{
+    .none{grid-area: null;}
+    .end{grid-area: end;}
+
+    .FukashigiNoCarte{grid-area: FukashigiNoCarte;}
+    .BlendS{grid-area: BlendS;}
+    .NarutoEnd1{grid-area: NarutoEnd1;}
+    .ChavesAcapulco{grid-area: ChavesAcapulco;}
+    .OshiNoKo{grid-area: OshiNoKo;}
+    .SonicFrontiers{grid-area: SonicFrontiers;}
+    .YoungGirlA{grid-area: YoungGirlA;}
+    .DokiDokiForever{grid-area: DokiDokiForever;}
+    .JustMonika{grid-area: JustMonika;}
+    .YourReality{grid-area: YourReality;}
+    .SystemOfDown{grid-area: SystemOfDown;}
+    .RockefellerStreet{grid-area: RockefellerStreet;}
+    .AlienBlues{grid-area: AlienBlues;}
+    .CrimesLost{grid-area: CrimesLost;}
+    .EstrelarRemix{grid-area: EstrelarRemix;}
+    .SequestroAs11{grid-area: SequestroAs11;}
+    .VocaloidGigachad{grid-area: VocaloidGigachad;}
+    .IGotNoTime{grid-area: IGotNoTime;}
+    .AmorHospitalar{grid-area: AmorHospitalar;}
+    .WeLiveWeLoveWeLie{grid-area: WeLiveWeLoveWeLie;}
+    .EmotionalPrism{grid-area: EmotionalPrism;}
+    .Aishite{grid-area: Aishite;}
+    .StayWithMe{grid-area: StayWithMe;}
+    .ShakeThatAss{grid-area: ShakeThatAss;}
+    .TheGirlNextDoor{grid-area: TheGirlNextDoor;}
+}
