@@ -29,5 +29,5 @@ const TheGirlNextDoor = "assets/audio/TheGirlNextDoor.mp3";
 
 function play(path){
     audio.setAttribute('src', path);
-    audio.volume = 0.2;
+    audio.volume = 1;
 }
